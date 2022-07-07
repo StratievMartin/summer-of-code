@@ -119,6 +119,10 @@ button {
   height: 20px;
   margin-right: 7px;
 }
+.createBtn {
+  color: #f6f8fb;
+  background-color: #4c6fff;
+}
 .editBtn > svg {
   height: 18px;
   margin-right: 7px;
@@ -128,10 +132,6 @@ button {
   border: 1px solid #f6f8fb;
   color: black;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-.createBtn {
-  color: #f6f8fb;
-  background-color: #4c6fff;
 }
 ul {
   list-style: none;

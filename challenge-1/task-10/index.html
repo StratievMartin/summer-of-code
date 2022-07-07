@@ -1,13 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="navBorder">
+      <nav>
+        <ul class="optionsUl">
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+              />
+            </svg>
+            <p>Community</p>
+          </li>
+          <li class="checklist">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+            <p>Checklists</p>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+              />
+            </svg>
+            <p>Templates</p>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+              />
+            </svg>
+            <p>Team</p>
+          </li>
+        </ul>
+        <div class="nav">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+            />
+          </svg>
+          <img src="static/lady.jpeg" alt="lady" />
+          <li class="rel">
+            <input type="text" placeholder="Search" name="search" id="search" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="searchSvg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="#9EA5B0"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </li>
+          <button class="createBtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+              />
+            </svg>
+            <h4>Create</h4>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="headerContainer">
+        <div class="header">
+          <h2>Checklists</h2>
+          <div class="optionContainer">
+            <div class="option">
+              <div class="flex">
+                <span>Status:</span>
+                <p>All</p>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+            <div class="option">
+              <div class="flex">
+                <span>Lists:</span>
+                <p>All</p>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+            <div class="option">
+              <div class="flex">
+                <span>Lists:</span>
+                <p>All</p>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="reviews">
+            <div class="border ; purple"></div>
+            <div class="border ; red"></div>
+          </div>
+          <div class="flex">
+            <h4>52 Week Money Challenge</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+              />
+            </svg>
+          </div>
+          <h4 class="dueDate">Due date: Feb 21, 2021</h4>
+          <div class="progressContainer ; flex">
+            <div class="progress">
+              <div class="progressBar"></div>
+              <div class="progressBarFilled"></div>
+            </div>
+            <p class="count">10/20</p>
+          </div>
+          <div class="owner">
+            <span>Owner:</span>
+            <p>Mary Ella Wood</p>
+          </div>
+          <div class="collabContainer">
+            <span>Collaborators:</span>
+            <div class="collaborators">
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+            </div>
+          </div>
+          <span class="updated">Last update: Today</span>
+        </div>
+        <div class="card">
+          <div class="flex">
+            <h4>52 Week Money Challenge</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+              />
+            </svg>
+          </div>
+          <h4 class="dueDate">Due date: Feb 21, 2021</h4>
+          <div class="progressContainer ; flex">
+            <div class="progress">
+              <div class="progressBar"></div>
+              <div class="progressBarFilled"></div>
+            </div>
+            <p class="count">10/20</p>
+          </div>
+          <div class="owner">
+            <span>Owner:</span>
+            <p>Mary Ella Wood</p>
+          </div>
+          <div class="collabContainer">
+            <span>Collaborators:</span>
+            <div class="collaborators">
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+            </div>
+          </div>
+          <span class="updated">Last update: Today</span>
+        </div>
+        <div class="card">
+          <div class="reviews">
+            <div class="border ; purple"></div>
+          </div>
+          <div class="flex">
+            <h4>52 Week Money Challenge</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+              />
+            </svg>
+          </div>
+          <h4 class="dueDate">Due date: Feb 21, 2021</h4>
+          <div class="progressContainer ; flex">
+            <div class="progress">
+              <div class="progressBar"></div>
+              <div class="progressBarFilled"></div>
+            </div>
+            <p class="count">10/20</p>
+          </div>
+          <div class="owner">
+            <span>Owner:</span>
+            <p>Mary Ella Wood</p>
+          </div>
+          <div class="collabContainer">
+            <span>Collaborators:</span>
+            <div class="collaborators">
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+            </div>
+          </div>
+          <span class="updated">Last update: Today</span>
+        </div>
+        <div class="card">
+          <div class="flex">
+            <h4>52 Week Money Challenge</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+              />
+            </svg>
+          </div>
+          <h4 class="dueDate">Due date: Feb 21, 2021</h4>
+          <div class="progressContainer ; flex">
+            <div class="progress">
+              <div class="progressBar"></div>
+              <div class="progressBarFilled"></div>
+            </div>
+            <p class="count">10/20</p>
+          </div>
+          <div class="owner">
+            <span>Owner:</span>
+            <p>Mary Ella Wood</p>
+          </div>
+          <div class="collabContainer">
+            <span>Collaborators:</span>
+            <div class="collaborators">
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+            </div>
+          </div>
+          <span class="updated">Last update: Today</span>
+        </div>
+        <div class="card">
+          <div class="reviews">
+            <div class="border ; purple"></div>
+          </div>
+          <div class="flex">
+            <h4>52 Week Money Challenge</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+              />
+            </svg>
+          </div>
+          <h4 class="dueDate">Due date: Feb 21, 2021</h4>
+          <div class="progressContainer ; flex">
+            <div class="progress">
+              <div class="progressBar"></div>
+              <div class="progressBarFilled"></div>
+            </div>
+            <p class="count">10/20</p>
+          </div>
+          <div class="owner">
+            <span>Owner:</span>
+            <p>Mary Ella Wood</p>
+          </div>
+          <div class="collabContainer">
+            <span>Collaborators:</span>
+            <div class="collaborators">
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+            </div>
+          </div>
+          <span class="updated">Last update: Today</span>
+        </div>
+        <div class="card">
+          <div class="reviews">
+            <div class="border ; purple"></div>
+            <div class="border ; red"></div>
+          </div>
+          <div class="flex">
+            <h4>52 Week Money Challenge</h4>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+              />
+            </svg>
+          </div>
+          <h4 class="dueDate">Due date: Feb 21, 2021</h4>
+          <div class="progressContainer ; flex">
+            <div class="progress">
+              <div class="progressBar"></div>
+              <div class="progressBarFilled"></div>
+            </div>
+            <p class="count">10/20</p>
+          </div>
+          <div class="owner">
+            <span>Owner:</span>
+            <p>Mary Ella Wood</p>
+          </div>
+          <div class="collabContainer">
+            <span>Collaborators:</span>
+            <div class="collaborators">
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+              <img src="static/lady.jpeg" alt="" />
+            </div>
+          </div>
+          <span class="updated">Last update: Today</span>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
