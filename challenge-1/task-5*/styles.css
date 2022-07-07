@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap");
+
+html {
+  font-family: "Montserrat", sans-serif;
+  background-color: #cbd2d9;
+  box-sizing: border-box;
+  padding: 50px;
+}
+body {
+  background-color: #fff;
+  color: #8d8d97;
+  padding: 50px;
+  text-transform: uppercase;
+  max-width: 900px;
+  -webkit-box-shadow: -10px 9px 21px -12px rgba(0, 0, 0, 0.8);
+  box-shadow: -10px 9px 21px -12px rgba(0, 0, 0, 0.8);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  color: #343647;
+  font-weight: 500;
+  min-width: 55%;
+}
+li:first-child {
+  border-bottom: 3px solid #7ef0d8;
+}
+footer,
+footer > div {
+  display: flex;
+  justify-content: space-between;
+}
+footer > div > p {
+  margin-left: 20px;
+}
+span {
+  color: #343647;
+  font-weight: 500;
+}
+.door,
+.bulb {
+  background-color: #cbd2d9;
+  border-radius: 50%;
+  padding: 15px;
+}
+.time {
+  text-align: end;
+}
+.date {
+  color: #343647;
+  font-weight: 500;
+}
+.bulb {
+  background-color: #fff;
+  -webkit-box-shadow: 5px 9px 21px -12px rgba(0, 0, 0, 0.8);
+  box-shadow: 5px 9px 21px -12px rgba(0, 0, 0, 0.8);
+}
+.temp {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #7ef0d8;
+  position: relative;
+  padding: 50px;
+}
+.progress-ring__circle {
+  background-color: #343647;
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%,
+}
+.temp > h1 {
+  font-weight: 400;
+  font-size: 60px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.temp > h1:after {
+  content: "\00b0";
+  width: 1px;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.tempContainer {
+  margin: 40px 0;
+}
+.temperatureSvg {
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+}
+.homeTemp {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
