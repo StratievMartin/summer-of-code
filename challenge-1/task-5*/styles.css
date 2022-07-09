@@ -18,6 +18,20 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+li{
+  padding-bottom: 10px;
 }
 ul {
   list-style: none;
@@ -55,6 +69,7 @@ span {
 .date {
   color: #343647;
   font-weight: 500;
+  margin-top: 15px;
 }
 .bulb {
   background-color: #fff;
@@ -104,5 +119,9 @@ span {
 .homeTemp {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin: 30px 0 80px 0;
+}
+.flex{
+  display: flex;
+  align-items: center;
 }
